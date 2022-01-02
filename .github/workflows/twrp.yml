@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11
-  DEVICE: camellia
+  DEVICE: Note_11P
   DT_LINK: https://github.com/lopestom/twrp_device_xiaomi_camellia
-  DT_PATH: device/xiaomi/camellia
+  DT_PATH: device/ulefone/Note_11P
   TARGET: bootimage
   TZ: Asia/manila
 
@@ -55,14 +55,14 @@ jobs:
        - name: Checkout device tree
          uses: actions/checkout@v2
          with:
-          path: twrp/device/xiaomi/camellia
+          path: twrp/device/ulefone/Note_11P
              
        - name: Build
          run: |
               PATH=~/bin:$PATH
               cd twrp
-              export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_camellia-eng && mka $TARGET -j2
-              cp  out/target/product/camellia/boot.img    out/target/product/camellia/boot-camellia-main-$(date +"%Y%m%d-%H%M").img  
+              export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_Note_11P-eng && mka $TARGET -j2
+              cp  out/target/product/Note_11P/boot.img    out/target/product/Note_11P/boot-Note_11P-main-$(date +"%Y%m%d-%H%M").img  
              
        - name: Release recovery image
          uses: softprops/action-gh-release@v1
@@ -72,4 +72,4 @@ jobs:
           tag_name: TWRP_11-main
           name: main
           files: | 
-            twrp/out/target/product/camellia/boot*.img
+            twrp/out/target/product/Note_11P/boot*.img

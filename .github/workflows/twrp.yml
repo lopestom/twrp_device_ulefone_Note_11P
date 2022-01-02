@@ -15,7 +15,7 @@ on:
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11
   DEVICE: Note_11P
-  DT_LINK: https://github.com/lopestom/twrp_device_xiaomi_camellia
+  DT_LINK: https://github.com/lopestom/twrp_device_ulefone_Note_11P
   DT_PATH: device/ulefone/Note_11P
   TARGET: bootimage
   TZ: Asia/manila

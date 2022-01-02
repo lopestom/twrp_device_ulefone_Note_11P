@@ -25,17 +25,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Inherit from star device
-$(call inherit-product, device/xiaomi/camellia/device.mk)
+$(call inherit-product, device/ulefone/Note_11P/device.mk)
 
 # Inherit some common recovery stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := camellia
-PRODUCT_NAME := twrp_camellia
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Poco M3 Pro,Redmi Note 10 5G
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_DEVICE := Note_11P
+PRODUCT_NAME := twrp_Note_11P
+PRODUCT_BRAND := Ulefone
+PRODUCT_MODEL := Note 11P
+PRODUCT_MANUFACTURER := Ulefone
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \

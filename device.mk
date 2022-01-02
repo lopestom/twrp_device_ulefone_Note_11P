@@ -1,4 +1,4 @@
-LOCAL_PATH := device/xiaomi/camellia
+LOCAL_PATH := device/ulefone/Note_11P
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

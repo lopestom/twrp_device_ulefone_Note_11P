@@ -15,7 +15,7 @@
 #
 
 # Device path
-DEVICE_PATH := device/xiaomi/camellia
+DEVICE_PATH := device/ulefone/Note_11P
 
 # Architecture
 TARGET_ARCH := arm64
@@ -78,7 +78,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := camellia,camellian
+TARGET_OTA_ASSERT_DEVICE := Note_11P,Note 11P
 
 # Partition
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -156,6 +156,7 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := true
 TW_INCLUDE_NTFS_3G := true
 TW_EXTRA_LANGUAGES := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
+TW_DEVICE_VERSION := Ulefone Note 11P_RH1_20211116_V02 - mehanik6
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200

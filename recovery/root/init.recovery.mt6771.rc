@@ -84,7 +84,8 @@ on fs
     start servicemanager
 
 on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
-        
+    start teed
+
 on property:hwservicemanager.ready=true
     write /proc/bootprof "ready"
     start vendor.keymaster-4-0-trustkernel

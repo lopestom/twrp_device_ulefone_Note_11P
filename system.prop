@@ -10,6 +10,14 @@ ro.hardware.kmsetkey=trustkernel
 ro.hardware.gatekeeper=trustkernel
 odm.teksun.support.tee=true
 ro.crypto.volume.filenames_mode=aes-256-cts
+ro.product.model=Note 11P
+ro.product.brand=Ulefone
+ro.product.name=Note_11P
+ro.product.device=Note_11P
+ro.sys.xunhu_bt=Note 11P
+ro.sys.xunhu_rf_mode=FDD3M
+ro.sys.hxy_wifi_display=no
+ro.product.xunhu.device=g2062upt_v1_gd_sh2_gq_r
 ro.sf.lcd_density=320
 #
 #others functions
